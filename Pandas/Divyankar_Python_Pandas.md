@@ -24,7 +24,7 @@ python --version
 ```
 If Python is already installed, it will generate a message with the Python version available.
 
-![shortcut](extras/Python_Version.jpg)
+![shortcut](Python_Version.jpg)
 
 To install Python, please visit: **How to Install Python on [Windows](https://www.geeksforgeeks.org/how-to-install-python-on-windows/) or [Linux](https://www.geeksforgeeks.org/how-to-install-python-on-linux/)**
 
@@ -44,7 +44,7 @@ Pandas can be installed using PIP by the use of the following command:
 pip install pandas
 ```
 
-![shortcut](extras/Pandas_Install.jpg)
+![shortcut](Pandas_Install.jpg)
 
 **Install Pandas using Anaconda**<br>
 Anaconda is open-source software that contains Jupyter, spyder, etc that are used for large data processing, data analytics, heavy scientific computing. If your system is not pre-equipped with Anaconda Navigator, you can learn **how to install Anaconda Navigator on [Windows](https://www.geeksforgeeks.org/how-to-install-anaconda-on-windows/) or [Linux](https://www.geeksforgeeks.org/how-to-install-anaconda-on-linux/)**
@@ -66,12 +66,12 @@ Anaconda is open-source software that contains Jupyter, spyder, etc that are use
 </p>
 To install Pandas on Linux, just type the following command in the Terminal Window and press Enter. Linux will automatically download and install the packages and files required to run Pandas Environment in Python:
 
-![shortcut](extras/Linux_Installation.jpg)
+![shortcut](Linux_Installation.jpg)
 
 ## Pandas Dataframe
 Pandas DataFrame is two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). A Data frame is a two-dimensional data structure, i.e., data is aligned in a tabular fashion in rows and columns. Pandas DataFrame consists of three principal components, the data, rows, and columns.
 
-![shortcut](extras/Dataframe_logo.jpg)
+![shortcut](Dataframe_logo.jpg)
 
 We will get a brief insight on all these basic operation which can be performed on Pandas DataFrame :
 * Creating a DataFrame
@@ -98,7 +98,7 @@ print(df)
 
 **Output**
 
-![shortcut](extras/DataFrame1_output.jpg)
+![shortcut](DataFrame1_output.jpg)
 
 **Creating DataFrame from dict of narray/lists:** To create DataFrame from dict of narray/list, all the narray must be of same length. If index is passed then the length index should be equal to the length of arrays. If no index is passed, then by default, index will be range(n) where n is the array length.
 ```python
@@ -120,7 +120,7 @@ print(df)
 
 **Output**
 
-![shortcut](extras/DataFrame2_output.jpg)
+![shortcut](DataFrame2_output.jpg)
 
 ### Dealing with Rows and Columns
 A Data frame is a two-dimensional data structure, i.e., data is aligned in a tabular fashion in rows and columns. We can perform basic operations on rows/columns like selecting, deleting, adding, and renaming.<br>
@@ -162,7 +162,7 @@ print(first, "\n\n\n", second)
 
 **Output**
 
-![shortcut](extras/DataFrame4_output.jpg)
+![shortcut](DataFrame4_output.jpg)
 
 ### Indexing and Selecting Data
 Indexing in pandas means simply selecting particular rows and columns of data from a DataFrame. Indexing could mean selecting all the rows and some of the columns, some of the rows and all of the columns, or some of each of the rows and columns. Indexing can also be known as Subset Selection.<br>
@@ -185,7 +185,7 @@ print(first)
 
 **Output**
 
-![shortcut](extras/DataFrame5_output.jpg)
+![shortcut](DataFrame5_output.jpg)
 
 **Indexing a DataFrame using .loc[ ] :**<br>
 This function selects data by the label of the rows and columns. The df.loc indexer selects data in a different way than just the indexing operator. It can select subsets of rows or columns. It can also simultaneously select subsets of rows and columns.<br>
@@ -207,7 +207,7 @@ print(first, "\n\n\n", second)
 **Output**<br>
 As shown in the output image, two series were returned since there was only one parameter both of the times.
 
-![shortcut](extras/DataFrame6_output.jpg)
+![shortcut](DataFrame6_output.jpg)
 
 **Indexing a DataFrame using .iloc[ ] :**<br>
 This function allows us to retrieve rows and columns by position. In order to do that, we’ll need to specify the positions of the rows that we want, and the positions of the columns that we want as well. The df.iloc indexer is very similar to df.loc but only uses integer locations to make its selections.<br>
@@ -226,7 +226,7 @@ print(row2)
 
 **Output**
 
-![shortcut](extras/DataFrame7_output.jpg)
+![shortcut](DataFrame7_output.jpg)
 
 ### Working with Missing Data
 Missing Data can occur when no information is provided for one or more items or for a whole unit. Missing Data is a very big problem in real life scenario. Missing Data can also refer to as NA(Not Available) values in pandas.<br>
@@ -250,7 +250,7 @@ df.isnull()
 
 **Output**
 
-![shortcut](extras/DataFrame8_output.jpg)
+![shortcut](DataFrame8_output.jpg)
 
 **Filling missing values using fillna(), replace() and interpolate() :** In order to fill null values in a datasets, we use fillna(), replace() and interpolate() function these function replace NaN values with some value of their own. All these function help in filling a null values in datasets of a DataFrame. Interpolate() function is basically used to fill NA values in the dataframe but it uses various interpolation technique to fill the missing values rather than hard-coding the value.
 ```python
@@ -272,7 +272,7 @@ df.fillna(0)
 
 **Output**
 
-![shortcut](extras/DataFrame9_output.jpg)
+![shortcut](DataFrame9_output.jpg)
 
 **Dropping missing values using dropna() :** In order to drop a null values from a dataframe, we used dropna() function this fuction drop Rows/Columns of datasets with Null values in different ways.
 ```python
@@ -294,7 +294,7 @@ df
 
 **Output**
 
-![shortcut](extras/DataFrame10_output.jpg)
+![shortcut]DataFrame10_output.jpg)
 
 ### Iterating over rows and columns
 Iteration is a general term for taking each item of something, one after another. Pandas DataFrame consists of rows and columns so, in order to iterate over dataframe, we have to iterate a dataframe like a dictionary.<br>
@@ -315,7 +315,7 @@ print(df)
 
 **Output**
 
-![shortcut](extras/DataFrame11_output.jpg)
+![shortcut](DataFrame11_output.jpg)
 
 **Iterating over Columns :** In order to iterate over columns, we need to create a list of dataframe columns and then iterating through that list to pull out the dataframe columns.
 ```python
@@ -333,13 +333,13 @@ print(df)
 
 **Output**
 
-![shortcut](extras/DataFrame12_output.jpg)
+![shortcut](DataFrame12_output.jpg)
 
 ## Pandas Series
 Pandas Series is a one-dimensional labeled array capable of holding data of any type (integer, string, float, python objects). The axis labels are collectively called index. Pandas Series is nothing but a column in an excel sheet.
 Labels need not be unique but must be a hashable type. The object supports both integer and label-based indexing and provides a host of methods for performing operations involving the index.
 
-![shortcut](extras/Pandas_logo.jpg)
+![shortcut](Pandas_logo.jpg)
 
 We will get a brief insight on all these basic operations which can be performed on Pandas Series :
 * Creating a Series
@@ -368,7 +368,7 @@ print(ser)
 
 **Output**
 
-![shortcut](extras/Series1_output.jpg)
+![shortcut](Series1_output.jpg)
 
 **Creating a series from Lists:** In order to create a series from list, we have to first create a list after that we can create a series from list.
 ```python
@@ -384,7 +384,7 @@ print(ser)
 
 **Output**
 
-![shortcut](extras/Series2_output.jpg)
+![shortcut](Series2_output.jpg)
 
 ### Accessing element of Series
 There are two ways through which we can access element of series, they are :
@@ -408,7 +408,7 @@ print(ser[:5])
 
 **Output**
 
-![shortcut](extras/Series3_output.jpg)
+![shortcut](Series3_output.jpg)
 
 **Accessing Element Using Label (index) :** In order to access an element from series, we have to set values by index label. A Series is like a fixed-size dictionary in that you can get and set values by index label.<br>
 Accessing a single element using index label
@@ -427,7 +427,7 @@ print(ser[16])
 
 **Output**
 
-![shortcut](extras/Series4_output.jpg)
+![shortcut](Series4_output.jpg)
 
 ### Indexing and Selecting Data in Series
 Indexing in pandas means simply selecting particular data from a Series. Indexing could mean selecting all the data, some of the data from particular columns. Indexing can also be known as Subset Selection.<br>
@@ -447,7 +447,7 @@ data
 
 **Output**
 
-![shortcut](extras/Series5_output.jpg)
+![shortcut](Series5_output.jpg)
 
 **Indexing a Series using .loc[ ] :** This function selects data by refering the explicit index . The df.loc indexer selects data in a different way than just the indexing operator. It can select subsets of data.
 ```python
@@ -464,7 +464,7 @@ data
 
 **Output**
 
-![shortcut](extras/Series6_output.jpg)
+![shortcut](Series6_output.jpg)
 
 **Indexing a Series using .iloc[ ] :** This function allows us to retrieve data by position. In order to do that, we’ll need to specify the positions of the data that we want. The df.iloc indexer is very similar to df.loc but only uses integer locations to make its selections.
 ```python
@@ -481,7 +481,7 @@ data
 
 **Output**
 
-![shortcut](extras/Series7_output.jpg)
+![shortcut](Series7_output.jpg)
 
 ### Binary Operation on Series
 We can perform binary operation on series like addition, subtraction and many other operation. In order to perform binary operation on series we have to use some function like .add(),.sub() etc.
@@ -500,7 +500,7 @@ print(data, "\n\n", data1)
 
 **Output**
 
-![shortcut](extras/Series8_output.jpg)
+![shortcut](Series8_output.jpg)
 
 ### Conversion Operation on Series
 In conversion operation we perform various operation like changing datatype of series, changing a series to list etc. In order to perform conversion operation we have various function which help in conversion like .astype(), .tolist() etc.
@@ -531,7 +531,7 @@ print("AFTER CONVERSION\n", after, "\n")
 
 **Output**
 
-![shortcut](extras/Series9_output.jpg)
+![shortcut](Series9_output.jpg)
 
 ## Functions & Methods
 The important Functions & Methods used in Pandas are:
@@ -549,7 +549,7 @@ Pandas head() method is used to return top n (5 by default) rows of a data frame
 
 In the following examples, the data frame used contains data of some NBA players. The image of data frame before any operations is attached below.
 
-![shortcut](extras/Data_logo.jpg)
+![shortcut](Data_logo.jpg)
 
 **Example #1:** In this example, top 5 rows of data frame are returned and stored in a new variable. No parameter is passed to .head() method since by default it is 5.
 ```python
@@ -569,7 +569,7 @@ data_top
 
 **Output**
 
-![shortcut](extras/Head1_output.jpg)
+![shortcut](Head1_output.jpg)
 
 **Example #2:** In this example, the .head() method is called on series with custom input of n parameter to return top 9 rows of the series.
 ```python
@@ -594,7 +594,7 @@ top
 
 **Output**
 
-![shortcut](extras/Head2_output.jpg)
+![shortcut](Head2_output.jpg)
 
 ### Dataframe/Series.describe() method
 Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values. When this method is applied to a series of string, it returns a different output which is shown in the examples below.<br>
@@ -634,7 +634,7 @@ desc
 
 **Output**
 
-![shortcut](extras/Describe1_output.jpg)
+![shortcut](Describe1_output.jpg)
 
 **Example #2:** In this example, the describe method is used on Series of strings called by the Name column to see the behaviour with object data type.
 ```python
@@ -659,7 +659,7 @@ desc
 
 **Output**
 
-![shortcut](extras/Describe2_output.jpg)
+![shortcut](Describe2_output.jpg)
 
 ### Dataframe/Series.loc[] method
 Pandas provide a unique method to retrieve rows from a Data frame. DataFrame.loc[] method is a method that takes only index labels and returns row or dataframe if the index label exists in the caller data frame.<br>
@@ -685,7 +685,7 @@ print(first, "\n\n\n", second)
 
 **Output**
 
-![shortcut](extras/Loc1_output.jpg)
+![shortcut](Loc1_output.jpg)
 
 **Example #2:** In this example, Name column is made as the index column and then two single rows are extracted at the same time by passing a list as parameter.
 ```python
@@ -707,7 +707,7 @@ rows
 
 **Output**
 
-![shortcut](extras/Loc2_output.jpg)
+![shortcut](Loc2_output.jpg)
 
 ### Dataframe/Series.iloc[] method
 Pandas provide a unique method to retrieve rows from a Data frame. Dataframe.iloc[] method is used when the index label of a data frame is something other than numeric series of 0, 1, 2, 3….n or in case the user doesn’t know the index label. Rows can be extracted using an imaginary index position which isn’t visible in the data frame.<br>
@@ -736,7 +736,7 @@ row1 == row2
 
 **Output**
 
-![shortcut](extras/Iloc1_output.jpg)
+![shortcut](Iloc1_output.jpg)
 
 **Example #2:** In this example, multiple rows are extracted first by passing a list and then by passing integers to extract rows between that range. After that, both the values are compared.
 ```python
@@ -758,7 +758,7 @@ row1 == row2
 
 **Output**
 
-![shortcut](extras/Iloc2_output.jpg)
+![shortcut](Iloc2_output.jpg)
 
 ### Pandas.read_csv() method
 **read_csv** is an important pandas function to read csv files and do operations on it.<br>

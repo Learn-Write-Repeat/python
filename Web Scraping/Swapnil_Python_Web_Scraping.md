@@ -1,4 +1,4 @@
-![PYHTON](./extras/Untitled.svg)
+![PYHTON](Untitled.svg)
 # Python Web Scraping
 
 ## 1. What is Web Scraping ?

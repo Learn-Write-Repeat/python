@@ -36,7 +36,7 @@ There is one package that stands out in terms of ease-of-use and we are gonna us
 ```python
    pip install SpeechRecognition
 ```
-![pip](extras/pip.PNG)
+![pip](pip.PNG)
 
 **OR** You can download the package  and extract it in the required folder --->> [Download](https://pypi.org/project/SpeechRecognition/#files) 
 
@@ -47,7 +47,7 @@ There is one package that stands out in terms of ease-of-use and we are gonna us
        '3.8.1'
 ```
 
-![verify](extras/verify.PNG)
+![verify](verify.PNG)
 
 
 ### 2. **Installing PyAudio using pip:**
@@ -62,7 +62,7 @@ Since I have already installed it.It shows requirement satisfied..:point_up:
 # If you have any errors trying to install using *(pip)* follow these simple steps below:
 * Find your python version,the easiest way to check either you have 64 or 32 Python just open it in the terminal:
 
-![version](extras/version.PNG)
+![version](version.PNG)
 
 * Find the appropriate `.whl` file from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio), **for example:** mine is `PyAudio-0.2.11-cp38-cp38-win32`, and download it.   
 * Go to the folder where you saved it after downloading **for example:**`C:\Users\P\Desktop\Python\Scripts`.
@@ -70,7 +70,7 @@ Since I have already installed it.It shows requirement satisfied..:point_up:
 ```python
    pip install PyAudio-0.2.11-cp38-cp38-win32.whl
 ```
-![explain](extras/exp.PNG)
+![explain](exp.PNG)
 
 ******
 ******
@@ -103,7 +103,7 @@ Since I have already installed it.It shows requirement satisfied..:point_up:
 > You need to be **aware that this is a very basic speech recognition program** so you can't expect everything to be correct....
 * **This was the result for the following [male.wav](https://www.signalogic.com/melp/EngSamples/Orig/male.wav) file.**
 
-![result](extras/result.PNG)
+![result](result.PNG)
 
 ### Final code:
 ```python
@@ -167,12 +167,12 @@ Since I have already installed it.It shows requirement satisfied..:point_up:
    # If you follow the above and try and implement the code..The code will definetly work....:smile::+1:
    # If you don't believe me you can check the video below..
    # Pardon my video skills.:sweat_smile::smile:
-   * [Video1](extras/exp1.mp4)
-   * [Video2](extras/exp2.mp4)
+   * [Video1](exp1.mp4)
+   * [Video2](exp2.mp4)
    
    **Result:**
    
-   ![final](extras/final.PNG)
+   ![final](final.PNG)
    
    # Hope You have learnt something new....:smile:
    # Happy Learning :smile::+1:
