@@ -39,7 +39,7 @@
             <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Data Structure - List</h1>
         </div>
         <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
-            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads 2513</p>
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads <span id="visits">0</span></p>
         </div>
     </section>
     <section id="sidetab" style="background: #dedede;padding: 30px;">
@@ -178,11 +178,18 @@ print(lists)</code></pre>
                 class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
         </div>
     </footer>
+    
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    
+    <script async src="https://api.countapi.xyz/hit/list/visits?callback=cb"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
 </body>
 
 </html>
