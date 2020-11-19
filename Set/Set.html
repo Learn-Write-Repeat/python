@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Set</title>
+    <meta name="description" content="A set is an unordered collection of items. Every set element is unique and must be immutable it means cannot be changed.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Data Structure - Set</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Akshay Adme</h4><a href="https://github.com/akshayadme" target="_blank" style="padding: 0 5px;"><i class="fa fa-github" style="font-size: 25px;color: #030431;"></i></a><a href="https://www.linkedin.com/in/akshay-adme-63aa43127/"
+                            target="_blank" style="padding: 0 5px;"><i class="fa fa-linkedin" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h3 style="color: #800080;">What is Set?</h3>
+                    <p>A set is an unordered collection of items. Every set element is unique and must be immutable it means cannot be changed. The sets remove the duplicate items. There is no index attached to the elements of the set, i.e., we cannot directly
+                        access any element of the set by the index. We can print them all together, or we can get the list of elements by looping through the set.<br><br>A set is created by placing all the items (elements) inside curly braces {}, separated
+                        by comma.<br></p><pre>
+Synatx:
+
+set1 = {} #Empty Set
+set2 = {"Python"} #Set with an Element
+</pre><pre><code>Example:
+
+s1 = set("Hello Welcome to learning of pyhon".split())
+s1 = {'is','and','my','name','honey'}
+</code>
+</pre>
+                    <h3 style="color: #800080;">Python Set Operations</h3>
+                    <p>Sets can also be used to perform mathematical set operations like union, intersection, symmetric difference, etc.<br></p>
+                    <h5 style="color: #800080;">Set Union</h5>
+                    <p>The union of two sets is calculated by using the pipe (|) operator. The union of the two sets contains all the items that are present in both the sets.<br></p><img src="assets/img/set%20union.png"><pre><code># Set union method
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+
+# use | operator
+# Output: {1, 2, 3, 4, 5, 6, 7, 8}
+print(A | B)   
+</code>
+</pre>
+                    <h5 style="color: #800080;">Set Intersection</h5>
+                    <p>The intersection of two sets can be performed by the and &amp; operator or the intersection() function. The intersection of the two sets is given as the set of the elements that common in both sets.<br></p><img src="assets/img/set%20intersection.png"
+                        style="padding: 20px ;"><pre><code># Intersection of sets
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+
+# use & operator
+# Output: {4, 5}
+print(A & B)</code></pre>
+                    <h5 style="color: #800080;">Set Diffrence</h5>
+                    <p>The difference of two sets can be calculated by using the subtraction (-) operator or intersection() method. Suppose there are two sets A and B, and the difference is A-B that denotes the resulting set will be obtained that element
+                        of A, which is not present in the set B.<br></p><img src="assets/img/set%20diffrence.png" style="width: 270px;padding: 20px;"><pre><code># Difference of two sets
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+
+# use - operator on A
+# Output: {1, 2, 3}
+print(A - B)  
+</code></pre>
+                    <h5 style="color: #800080;">Set Symmetric Diffrence</h5>
+                    <p>The symmetric difference of two sets is calculated by ^ operator or symmetric_difference() method. Symmetric difference of sets, it removes that element which is present in both sets.<br></p><img src="assets/img/set%20symmetric%20diffrence.jpg" style="padding: 15px;"><pre><code># Symmetric difference of two sets
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+
+# use ^ operator
+# Output: {1, 2, 3, 6, 7, 8}
+print(A ^ B)</code></pre>
+                    <h3
+                        style="color: #800080;padding-top: 20px;padding-bottom: 10px;">Built-In Set Methods</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Function</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><br>add(item)<br><br></td>
+                                        <td><br>It adds an item to the set. It has no effect if the item is already present in the set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>clear()<br><br></td>
+                                        <td><br>It deletes all the items from the set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>copy()<br><br></td>
+                                        <td><br>It returns a shallow copy of the set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>difference_update()<br><br></td>
+                                        <td><br>It modifies this set by removing all the items that are also present in the specified sets.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>discard(item)<br><br></td>
+                                        <td><br>It removes the specified item from the set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>intersection()<br><br></td>
+                                        <td><br>It returns a new set that contains only the common elements of both the sets.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>intersection_update()<br><br></td>
+                                        <td><br>It removes the items from the original set that are not present in both the sets (all the sets if more than one are specified).<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>Isdisjoint()<br><br></td>
+                                        <td><br>Return True if two sets have a null intersection.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>Issubset()<br><br></td>
+                                        <td><br>Report whether another set contains this set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>Issuperset()<br><br></td>
+                                        <td><br>Report whether this set contains another set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>pop()<br><br></td>
+                                        <td><br>Remove and return an arbitrary set element that is the last element of the set. Raises KeyError if the set is empty.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>remove(item)<br><br></td>
+                                        <td><br>Remove an element from a set; it must be a member. If the element is not a member, raise a KeyError.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>symmetric_difference()<br><br></td>
+                                        <td><br>Returns the symmetric difference of two sets as a new set<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>symmetric_difference_update()<br><br></td>
+                                        <td><br>Update a set with the symmetric difference of itself and another.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>union()<br><br></td>
+                                        <td><br>Return the union of sets as a new set.<br><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br>update()<br><br></td>
+                                        <td><br>Update a set with the union of itself and others.<br><br></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>I hope you learned something new today and share it with your peers. Who knows it may be helpful for someone else.<br><br>I case you want to learn more about Set&nbsp;&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Set/Akshay_Python_Set.ipynb"
+                                target="_blank">Click Here</a>&nbsp;for some practical knowledge.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/surf/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
