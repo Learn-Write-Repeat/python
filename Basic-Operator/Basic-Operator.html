@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Operators</title>
+    <meta name="description" content="Operators are used to perform operations on variables and values.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Basic Operators</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Ananthakrishnan Nair RS<br></h4><a href="https://github.com/akrish4" target="_blank" style="padding: 0 5px;"><i class="fa fa-github" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h3 style="color: #800080;">Basic operators in python</h3>
+                    <p><strong>Operators are used to perform operations on variables and values.</strong><br><strong>Python divides the operators in the following groups:</strong><br></p>
+                    <ul>
+                        <li>Arithmetic operator</li>
+                        <li>Assignment operator</li>
+                        <li>Logical operator</li>
+                        <li>Identity operator</li>
+                        <li>Membership operator</li>
+                        <li>Bitwise operator</li>
+                    </ul>
+                    <h5>Python Arithmetic Operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Name</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>+</td>
+                                    <td>Addition</td>
+                                    <td>x+y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>-</td>
+                                    <td>Subtraction</td>
+                                    <td>x-y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>*</td>
+                                    <td>Multiplication</td>
+                                    <td>x*y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>/</td>
+                                    <td>Division</td>
+                                    <td>x/y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>%</td>
+                                    <td>Modulus</td>
+                                    <td>x%y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>**</td>
+                                    <td>Exponentiation</td>
+                                    <td>x**y</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><pre>
+Synatx:
+
+# Examples of Arithmetic Operator  
+     a = 9
+     b = 4
+
+  # Addition of numbers  
+   add = a + b  
+
+  # Subtraction of numbers  
+  sub = a - b  
+
+  # Multiplication of number  
+     mul = a * b  
+
+  # Division(float) of number  
+   div1 = a / b  
+     
+  # Division(floor) of number  
+      div2 = a // b  
+
+  # Modulo of both number  
+       mod = a % b  
+
+   # Power 
+       p = a ** b 
+   print(add)  
+   print(sub)  
+   print(mul)  
+   print(div1)  
+   print(mod) 
+   print(div2)
+   print(p) 
+</pre><pre><code>Output:
+
+	  13
+      5
+      36
+      2.25
+      2
+      1
+      6561
+</code>
+</pre>
+                    <h5 style="color: #800080;">Python Assignment Operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Example</th>
+                                    <th>Same as</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>=</td>
+                                    <td>x=5</td>
+                                    <td>x=5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>+=</td>
+                                    <td>x+=5</td>
+                                    <td>x=x+5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>-=</td>
+                                    <td>x-=5</td>
+                                    <td>x=x+5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>/=</td>
+                                    <td>x/=5</td>
+                                    <td>x=x/5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>%=</td>
+                                    <td>x%=5</td>
+                                    <td>x=x%5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>//=</td>
+                                    <td>x//=5</td>
+                                    <td>x=x//5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>//=</td>
+                                    <td>x//=5</td>
+                                    <td>x=x//5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>**=</td>
+                                    <td>x**=5</td>
+                                    <td>x=x**5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&amp;=</td>
+                                    <td>x&amp;=5</td>
+                                    <td>x=x&amp;5</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>|=</td>
+                                    <td>x|=5</td>
+                                    <td>x=x|5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h5 style="color: #800080;">Python comparison operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Name</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>==</td>
+                                    <td>Equal</td>
+                                    <td>x==y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>!=</td>
+                                    <td>Not Equal</td>
+                                    <td>x!=y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&gt;</td>
+                                    <td>Greater than</td>
+                                    <td>x&gt;y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&lt;</td>
+                                    <td>Less than</td>
+                                    <td>x&lt;y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&gt;=</td>
+                                    <td>Greater than or equal to</td>
+                                    <td>x&gt;=y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&lt;=</td>
+                                    <td>Less than or equal to</td>
+                                    <td>x&lt;=y</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><pre><code>Syntax:
+
+# Examples of Comparison Operators 
+ a = 13
+ b = 33
+
+# a > b is False 
+print(a > b) 
+
+# a < b is True 
+print(a < b) 
+
+# a == b is False 
+print(a == b) 
+
+# a != b is True 
+print(a != b) 
+
+# a >= b is False 
+print(a >= b) 
+
+# a <= b is True 
+print(a <= b)  
+</code>
+</pre><pre><code>Output:
+
+	 False
+     True
+     False
+     True
+     False
+     True
+</code>
+</pre>
+                    <h5 style="color: #800080;">Python logical operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>and</td>
+                                    <td>Return true if both statements are true</td>
+                                    <td>x&lt;y and x&lt;y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>or</td>
+                                    <td>Return true if one of the statement are true</td>
+                                    <td>x&gt;y or x&gt;y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>not</td>
+                                    <td>Reverse the result, returns the result if its true</td>
+                                    <td>not(x&gt;y and x&lt;y)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><pre><code>Example 
+	# Examples of Logical Operator 
+     a = True
+     b = False
+
+     # Print a and b is False 
+     print(a and b) 
+
+     # Print a or b is True 
+     print(a or b) 
+
+     # Print not a is False 
+     print(not a) </code></pre><pre><code>Output:
+ 
+	False
+     True
+     False</code></pre>
+                    <h5 style="color: #800080;">Python membership operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>in</td>
+                                    <td>Returns True if a sequence with the specified value is present in the object<br></td>
+                                    <td>x in y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>not in</td>
+                                    <td>Returns True if a sequence with the specified value is not present in the object<br></td>
+                                    <td>x not in y</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><pre><code>Example:
+
+
+	# Examples of Membership operator 
+  x = 'hello guys'
+  y = {3:'a',4:'b'} 
+
+
+  print('h' in x) 
+
+  print('Hello' not in x) 
+
+  print('hello' not in x) 
+
+  print(3 in y) 
+</code></pre><pre><code>Output:
+
+True
+  True
+  False
+  True 
+</code></pre>
+                    <h5 style="color: #800080;">Python identity operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>is</td>
+                                    <td>Returns True if both variables are the same object<br></td>
+                                    <td>x is y</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>is not</td>
+                                    <td>Returns True if both variables are not the same object<br></td>
+                                    <td>x is not y</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><pre><code>output:
+
+False
+     True
+     False</code></pre><pre><code>Example:
+
+# Examples of Identity operators 
+a1 = 3
+b1 = 3
+a2 = 'hello'
+b2 = 'hello'
+a3 = [1,2,3] 
+b3 = [1,2,3] 
+print(a1 is not b1) 
+
+
+print(a2 is b2) 
+
+# Output is False, since lists are mutable. 
+print(a3 is b3) </code></pre>
+                    <h5 style="color: #800080;">Python bitwise operator</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Operator</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>&amp;</td>
+                                    <td>AND</td>
+                                    <td>Sets each bit to 1 if both bits are 1<br></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>|</td>
+                                    <td>OR<br></td>
+                                    <td>Sets each bit to 1 if one of two bits is 1<br></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>^</td>
+                                    <td>XOR<br></td>
+                                    <td>Sets each bit to 1 if one of the two bits is 1<br></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>~</td>
+                                    <td>NOT<br></td>
+                                    <td>Inverts all the bit<br></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&lt;&lt;</td>
+                                    <td>Zero fill left shift&nbsp;<br></td>
+                                    <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off<br></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>&gt;&gt;</td>
+                                    <td>Signed shift right<br></td>
+                                    <td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><pre><code>Example:
+
+## Examples of Bitwise operators 
+ a = 10
+ b = 4
+
+ # Print bitwise AND operation   
+ print(a & b) 
+
+ # Print bitwise OR operation 
+ print(a | b) 
+
+ # Print bitwise NOT operation  
+ print(~a) 
+
+ # print bitwise XOR operation  
+print(a ^ b) 
+
+# print bitwise right shift operation  
+print(a >> 2) 
+
+# print bitwise left shift operation  
+print(a << 2) </code></pre><pre><code>Example:
+
+0
+   14
+  -11
+   14
+   2
+   40</code></pre>
+                    <h5 style="color: #800080;">Any All in python&nbsp;</h5>
+                    <p>Any and All are two built ins provided in python used for successive And/Or.<br></p>
+                    <h6 style="color: #800080;">Any</h6>
+                    <p>Returns true if any of the items is True. It returns False if empty or all are false. Any can be thought of as a sequence of OR operations on the provided iterables. It short circuit the execution i.e. stop the execution as soon as
+                        the result is known.<br></p><pre><code>
+	Example:
+
+	# Since all are false, false is returned 
+ print (any([False, False, False, False])) 
+
+ # Here the method will short-circuit at the 
+ # second item (True) and will return True. 
+ print (any([False, True, False, False])) 
+
+ # Here the method will short-circuit at the 
+ # first (True) and will return True. 
+ print (any([True, False, False, False])) 
+</code></pre><pre><code>Output:
+
+ False
+ True
+ True
+</code></pre>
+                    <h6 style="color: #800080;">All</h6>
+                    <p>All Returns true if all of the items are True (or if the iterable is empty). All can be thought of as a sequence of AND operations on the provided iterables. It also short circuit the execution i.e. stop the execution as soon as the
+                        result is known.<br></p><pre><code>
+	Example:
+	# Here all the iterables are True so all 
+# will return True and the same will be printed 
+print (all([True, True, True, True])) 
+
+# Here the method will short-circuit at the  
+# first item (False) and will return False. 
+print (all([False, True, True, False])) 
+
+# This statement will return False, as no 
+# True is found in the iterables 
+print (all([False, False, False])) 
+</code></pre><pre><code>
+
+ Output:
+	
+ True
+ False
+ False
+</code></pre></div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/operator/visits?callback=cb"></script>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
