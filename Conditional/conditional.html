@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Conditionals</title>
+    <meta name="description" content="Conditional statements have a boolean(True or False) condition . If the condition evaluates to True , all the indented statements are executed. If the condition evaluates to False , then , all the indented statements are ignored and next line is executed.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Conditionals</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Prachi Diwan<br></h4><a href="agarwal.ashu.21@gmail.com" target="_blank" style="padding: 0 5px;"><i class="fa fa-envelope-o" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h2 style="color: #800080;"><strong>Conditionals:</strong><br></h2>
+                    <h5><strong>What are conditional statement?</strong></h5>
+                    <p>Conditional statements have a boolean(True or False) condition . If the condition evaluates to True , all the indented statements are executed. If the condition evaluates to False , then , all the indented statements are ignored and
+                        next line is executed.<br></p>
+                    <h5><strong>Need of conditional statements:</strong></h5>
+                    <p>We need conditional statements in our program to change the direction of program according to the conditions.<br></p>
+                    <h5><strong>Types of conditional statements:-</strong></h5>
+                    <ul>
+                        <li>if statement<br></li>
+                        <li>if-else statement<br></li>
+                        <li>chained conditional statement<br></li>
+                    </ul>
+                    <h5><strong><em>Let's take a look at all conditional statements:</em></strong><br></h5>
+                    <h6><strong>1. if statement :&nbsp;</strong><br>When we have a condition or boolean expression to check , we use if condition.<br><br></h6><pre><code>Syntax:
+
+  if boolean condition:
+
+           statement(s)
+
+    Example:
+
+    if a>b:
+            print(a)
+</code></pre>
+                    <ul>
+                        <li>Here, colon(':') is used to seperate the if statement with if body<br></li>
+                        <li>'a&gt;b' is the boolean condition<br></li>
+                        <li>If this boolean condition evaluates to True , then the statements inside the if block will be executed<br></li>
+                        <li>'print(a)' here , is the statement inside the if block , which will be executed only if the boolean condition evalutes to True<br></li>
+                        <li>If the condition evalutes to false the statement(s) inside the if block will be ignored , and rest of the statements will be executed.<br></li>
+                    </ul>
+                    <p><br>Let's take an example from our daily life:<br><br>Example: If it is rainiing, use an umbrella otherwise don't use an umbrella.<br><br>Explanation: Here , the condition is "if it is raining" , if this condition evaluates to true
+                        , then we use an umbrella ,otherwise, it is not raining so we don't need the umbrella.<br><br>Now, let us take a look at the flowchart:<br></p><img class="img-fluid" src="assets/img/if%20st.jpg">
+                    <p><br>Thus, this flowchart explain us the flow of the program using 'if' conditional statement.<br></p>
+                    <h6><strong>2. if-else statement</strong></h6>
+                    <p>These if-else statements gives us an opportunity to have a seperate block of code to be executed if the boolean condition return false, i.e, we can write a set of code which we want to be executed when condition is true , in the if
+                        block , and other set of codes in the else block.<br></p><pre><code>Syntax:
+	
+if (boolean condition):
+    statement(s)
+else:
+    statements(s)</code></pre>
+                    <p>Example:If we want to print the greater number among two numbers:<br></p><pre><code>
+if a>b:
+    print(a)
+else:
+    print(b)</code></pre>
+                    <p>Here, we first check if a&gt;b , if True ,a is printed . Else , statements under else code is executed and , b is printed.<br></p>
+                    <ul>
+                        <li>Here, colon(':') is used to separate the if statement with if body and the else statement withe the else body.<br></li>
+                        <li>'a&gt;b' is the boolean condition<br></li>
+                        <li>If this boolean condition evaluates to True , then the statements inside the if block will be executed<br></li>
+                        <li>'print(a)' here , is the statement inside the if block , which will be executed only if the boolean condition evalutes to True<br></li>
+                        <li>If the condition evaluates to false, the statement(s) under else bock will be executed.<br></li>
+                    </ul>
+                    <p>Let's take an example from our daily life:<br><br>Example: Only the students with CGPA greater than 8.5 will be allowed to enter , others , go back home.<br><br>Explanation: Here , the condition is "the CGPA of the student is greater
+                        than 8.5" , if this condition evaluates to true , then then student is allowed in , else he is requested to go back home.<br><br>Now, let us take a look at the flowchart:<br></p><img class="img-fluid" src="assets/img/if%20else%20st.jpg">
+                    <p><br>Thus, this flowchart explain us the flow of the program using 'if-else' conditional statement.<br></p>
+                    <h6><strong>3. Chained conditional statements</strong></h6>
+                    <p>Sometimes we need more than two branches. When we have codes for more than two possibilities we require chained conditional statements. These have an elif statement , where we can mention the second set of possibilities that we have
+                        in our mind.<br></p><pre><code>Syntax:
+if boolean condition:
+    statement(s)
+elif:
+    statements(s)
+else:
+    statements(s)
+        </code></pre>
+                    <p>Example:If we want to print the greater number among two numbers:<br></p><pre><code>Example:
+ if a>b:
+        print(a)
+ elif b>a:
+        print(b)
+ else:
+        print("equal")
+</code></pre>
+                    <p>Here, we first check if a&gt;b , if True ,a is printed . Else , elif condition is checked, if b&gt;a, if True , b is printed.Else statements under else code is executed and , "equal" is printed.<br></p>
+                    <ul>
+                        <li>It has an if statement at first , if that evaluate to true , then it goes into if block.<br></li>
+                        <li>If it evaluates to false, it goes to elif, i.e, it checks the condition of the elif block.<br></li>
+                        <li>If the condition in the elif bock evaluates to true , then the elif block is executed.<br></li>
+                        <li>If the condition again evaluates to false , then the code in the else block is executed.<br></li>
+                    </ul>
+                    <p>Now, let us take a look at the flowchart:<br></p><img class="img-fluid" src="assets/img/chained%20st.jpg">
+                    <p><br>Thus, this flowchart explain us the flow of the program using 'Chained conditional'statement.<br></p>
+                    <p>To get more practical knowledge&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Conditional/Prachi_Python_Conditionals.ipynb" target="_blank">Click here.</a><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/conditional/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
