@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - File Handling</title>
+    <meta name="description" content="File handling is a process through which we can create a file, store data in it, retrieve data from the file and also append more information in it.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">File Handling</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Prachi Diwan<br></h4><a href="agarwal.ashu.21@gmail.com" target="_blank" style="padding: 0 5px;"><i class="fa fa-envelope-o" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h3 style="color: #800080;">What is file handling?</h3>
+                    <p>File handling is a process through which we can create a file, store data in it, retrieve data from the file and also append more information in it.<br></p>
+                    <h3 style="color: #800080;">Does python supports file handling?</h3>
+                    <p>Like many other languages python also supports file handling.<br></p>
+                    <h3 style="color: #800080;">What is file handling in python?</h3>
+                    <p>Python supports file handling and gives us many modes to operate a file. We can create a new file using python code, open existing files, write in files ,read data from files and many more such options. We have many languages which
+                        supports file handling , in some languages this topic is a bit complicated, but in python file handling is very easy.<br><br>Python treats it's texts and binary differently in file handling.<br><br>Before we can start with reading
+                        data from a file, or writing some data into it, we need to open a file.<br></p>
+                    <h3 style="color: #800080;">Working of open function for python file handling:<br></h3>
+                    <p>We use open function in python to open a file in different modes , read mode, write mode, etc<br></p><pre><code>Syntax:
+    file object = open(file_name,mode)</code></pre>
+                    <ul>
+                        <li>file object - This is the object of the file.<br></li>
+                        <li>open - open() is the function used to open a file in python.<br></li>
+                        <li>file_name - file_name is the name of the file we want to open to edit data or read data from it.<br></li>
+                        <li>mode - In python we have many modes in which we can operate a file. As python treats texts and binary differently in file handling , so the number of modes is more.<br></li>
+                    </ul>
+                    <p>Let us take a look into the different types of modes to operate a file:<br><br><strong><em>Modes in Python</em>:</strong></p>
+                    <p>1.&nbsp;<strong><em>r</em></strong>&nbsp;- This is the read mode. In this we can read the informaton the file has. The reading of the data starts from the beginning of the file, i.e., the file pointer is at the beginning of the file.<br><br>2.&nbsp;<strong><em>rb</em></strong>&nbsp;-
+                        This is also a read mode , but here the information is read only in binary format. Here also, the reading of the data starts from the beginning of the file, i.e., the file pointer is at the beginning of the file.<br><br>3.&nbsp;<strong><em>r+</em></strong>&nbsp;-
+                        This mode is for both reading and writing data. In this we can read data and write data in the same file simultaneously. Here too, the reading and writing of the data starts from the beginning of the file, i.e., the file pointer
+                        is at the beginning of the file.<br><br>4.&nbsp;<strong><em>rb+</em></strong>&nbsp;-This mode is also for both reading and writing data , but here the information is read and written only in binary format. Here also, the reading
+                        and writing of the data starts from the beginning of the file, i.e., the file pointer is at the beginning of the file.<br><br>5.&nbsp;<strong><em>w</em></strong>&nbsp;- This is the write mode. In this we can write data into the
+                        file. If there is already some information in the file , this mode overwrites it. If there is no file already with the specified name, it creates a new file. The writing of the data starts from the beginning of the file, i.e.,
+                        the file pointer is at the beginning of the file.<br><br>6.&nbsp;<strong><em>wb</em></strong>&nbsp;-This is also a write mode , but here the information can be written only in binary format. If there is already some information
+                        in the file , this mode overwrites it. If there is no file already with the specified name, it creates a new file. The writing of the data starts from the beginning of the file, i.e., the file pointer is at the beginning of the
+                        file.<br><br>7.&nbsp;<strong><em>w+</em></strong>&nbsp;- This mode is for both reading and writing data. In this we can read data and write data in the same file simultaneously. If there is already some information in the file
+                        , this mode overwrites it. If there is no file already with the specified name, it creates a new file. The reading and writing of the data starts from the beginning of the file, i.e., the file pointer is at the beginning of the
+                        file.<br><br>8.&nbsp;<strong><em>wb+</em></strong>&nbsp;-This mode is also for both reading and writing data , but here the information is read and written only in binary format. If there is already some information in the file
+                        , this mode overwrites it. If there is no file already with the specified name, it creates a new file. The writing of the data starts from the beginning of the file, i.e., the file pointer is at the beginning of the file.<br><br>9.&nbsp;<strong><em>a</em></strong>&nbsp;-
+                        This mode is called append mode. In this we write into the file without overwriting the previous data , i.e., if there is already some information in the file , unlike write mode , append does not overwrites it and it appends more
+                        information in the same file. If there is no file already with the specified name, it creates a new file. The writing of the data starts from the end of the file, i.e., the file pointer is at the end of the file.<br><br>10.&nbsp;<strong><em>ab</em></strong>&nbsp;-
+                        This mode is also append mode, but here the information can be written only in binary format. In this we write into the file without overwriting the previous data , i.e., if there is already some information in the file , unlike
+                        write mode , append does not overwrites it and it appends more information in the same file. If there is no file already with the specified name, it creates a new file. The writing of the data starts from the end of the file, i.e.,
+                        the file pointer is at the end of the file.<br><br>11.&nbsp;<strong><em>a+</em></strong>&nbsp;- This mode is also append mode, but this mode is for both reading and writing data. In this we write into the file without overwriting
+                        the previous data , i.e., if there is already some information in the file , unlike write mode , append does not overwrites it and it appends more information in the same file. If there is no file already with the specified name,
+                        it creates a new file. The reading and writing of the data starts from the end of the file, i.e., the file pointer is at the end of the file.<br><br>12.&nbsp;<strong><em>ab+</em></strong>&nbsp;- This mode is aldo append mode, but
+                        here the information can be written and can be read too , only in binary format. In this we write into the file without overwriting the previous data , i.e., if there is already some information in the file , unlike write mode
+                        , append does not overwrites it and it appends more information in the same file. If there is no file already with the specified name, it creates a new file. The reading and writing of the data starts from the end of the file,
+                        i.e., the file pointer is at end of the file.<br><br></p>
+                    <p><strong><em>If no mode is specified , python considers 'r' as the default mode</em></strong><br></p>
+                    <h6><strong><em>File object attributes:</em></strong><br></h6>
+                    <p>We saw the different modes in python. Now, once the file is open we can get many information about the file. Let us look some attributes of the file object to get those information:<br></p>
+                    <p>1.&nbsp;<strong><em>file.mode</em></strong>&nbsp;- It returns the access mode in which the file is opened.<br>2.&nbsp;<strong><em>file.name</em></strong>&nbsp;- It returns the name of the file.<br>3.&nbsp;<strong><em>file.close</em></strong>&nbsp;-
+                        It is used to close the file.<br>4.&nbsp;<strong><em>file.closed</em></strong>&nbsp;- It returns whether the file is open or closed , i.e, it returns True if the file is closed.<br>5.&nbsp;<strong><em>read([size])</em></strong>&nbsp;-
+                        It reads the specified number of bytes(the size specified) from the file.<br>6.&nbsp;<strong><em>readline([size])</em></strong>&nbsp;- It is used to read one entire line from a file.<br>7.&nbsp;<strong><em>tell()&nbsp;</em></strong>-
+                        This returns the current position of file pointer.<br>8.&nbsp;<strong><em>write(str)</em></strong>&nbsp;- This writes a string into the file.<br>9.&nbsp;<strong><em>writelines(sequence)</em></strong>&nbsp;- This writes a sequence
+                        of strings into the file.<br></p><pre><code>Example 1:
+
+file = open("fname.txt","w")
+file.write("Python is a programming language!")
+file.close()</code></pre>
+                    <p>Here , a file is created first. The name of the file is "fname.txt" and it currently in "w" mode ,i.e., write mode. So, the given text is written in the file. And finally the file is closed.<br>If we want to open the above file the
+                        contents we would see are:<br>Python is a programming language!<br></p><pre><code>Example 2:
+
+s = open("fname.txt","r+")
+print("The read text is ",s)
+s.close()
+</code></pre>
+                    <p><br>Here, the name of the file is fname , the mode is r+ and we print the read text , finally the file is closed.<br>Output: Python&nbsp;<br><br></p><pre><code>
+Example 3:
+
+fo = open("fname.txt", "r+")
+s = fo.read(10)
+print "Read String is : ", str
+
+##Check current position
+
+position = fo.tell()
+print "Current file position : ", position
+
+##Reposition pointer at the beginning once again
+
+position = fo.seek(0, 0)
+str = fo.read(10)
+print "Again read String is : ", str
+
+##Close opend file
+
+fo.close()
+
+Output:
+Read String is : Python is
+Current file position : 10
+Again read String is : Python is
+
+Example 4:
+
+fo = open("fname.txt", "w")
+line="I want internship in DevIncept!"
+fo.write(line)
+fo.close()
+
+</code></pre>
+                    <p>If we open the file , it will have following contents:<br>I want internship in DevIncept!<br></p>
+                    <p>To get more practical knowledge&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/File%20Handling/Prachi_Python_File_Handling.ipynb" target="_blank">Click here.</a><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/filehandling/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
