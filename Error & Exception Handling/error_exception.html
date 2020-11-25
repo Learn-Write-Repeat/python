@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Error &amp; Exception</title>
+    <meta name="description" content="Errors are the problems in a program due to which the program will stop the execution. They are almost always the fault of the programmer. The process of finding and eliminating errors is called debugging">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Error &amp; Exception Handling</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Divyankar Bhargav<br></h4><a href="https://github.com/ScaryWings83289" target="_blank" style="padding: 0 5px;"><i class="fa fa-github" style="font-size: 25px;color: #030431;"></i></a><a href="https://www.linkedin.com/in/divyankar-bhargav-a4b487196/"
+                            target="_blank" style="padding: 0 5px;"><i class="fa fa-linkedin" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h2 style="color: #800080;">Error &amp; Exceptions</h2>
+                    <p>Errors are the problems in a program due to which the program will stop the execution. They are almost always the fault of the programmer. The process of finding and eliminating errors is called debugging. Basically, there are two
+                        types of Errors:-<br></p>
+                    <ul>
+                        <li>Syntax Error<br></li>
+                        <li>Logical Error<br></li>
+                    </ul>
+                    <h4 style="color: #800080;"><strong>Syntax Error</strong></h4>
+                    <p>Syntax errors occurs when we violate the rules of Python and they are the most common kind of error that we get while learning a new language. For example,<br></p><img src="assets/img/error1.jpg">
+                    <p>In the aforementioned code we have missed the ':' before the keyword print.<br><br>Common Python Syntax errors include:<br></p>
+                    <ul>
+                        <li>leaving out a keyword<br></li>
+                        <li>putting a keyword in the wrong place<br></li>
+                        <li>leaving out a symbol, such as a colon, comma or brackets<br></li>
+                        <li>misspelling a keyword<br></li>
+                        <li>incorrect indentation<br></li>
+                        <li>empty block<br></li>
+                    </ul>
+                    <h4 style="color: #800080;"><strong>Logical Error</strong><br></h4>
+                    <p>Logical errors are the most difficult to fix. They may occur due to wrong algorithm or logic to solve a particular program. They occur when the program runs without crashing, but produces an incorrect result. You won’t get an error
+                        message, because no syntax or runtime error has occurred. You will have to find the problem on your own by reviewing all the relevant parts of your code – although some tools can flag suspicious code which looks like it could cause
+                        unexpected behavior.<br><br>Here are some examples of mistakes which lead to logical errors:<br></p>
+                    <ul>
+                        <li>using the wrong variable name<br></li>
+                        <li>indenting a block to the wrong level<br></li>
+                        <li>using integer division instead of floating-point division<br></li>
+                        <li>getting operator precedence wrong<br></li>
+                        <li>making a mistake in a boolean expression<br></li>
+                        <li>off-by-one, and other numerical errors<br></li>
+                    </ul>
+                    <h4 style="color: #800080;"><strong>What are Exceptions?</strong></h4>
+                    <p>Even if a statement is syntactically correct, it may still cause an error when executed. Such errors that occur at run-time(or during execution) are known as exceptions. An exception is an event, which occurs during the execution of
+                        a program and disrupts the normal flow of the program's instructions. When a program encounters a situation which it cannot deal with, it raises an exception. Let us see some examples in which exceptions occurs.<br></p><img src="assets/img/error2.jpg">
+                    <h4
+                        style="color: #800080;"><strong>Handling Exceptions</strong></h4>
+                        <p>We can handle exceptions in our program by using try block and except block. A critical operation which can raise exception is placed inside the try block and the code that handles exception is written in except block. The Syntax
+                            for try-except block can be given as:<br></p><img src="assets/img/error3.jpg">
+                        <p>The picture below shows you how the exception is handled in a program.<br></p><img src="assets/img/error4.jpg">
+                        <p>Now, let's take a look at an example to better understand how an exception is handled in a program.<br></p><img src="assets/img/error5.jpg">
+                        <p>The output of the aforementioned program is given below:<br></p><img src="assets/img/error6.jpg">
+                        <h4 style="color: #800080;"><strong>Multiple except block</strong></h4>
+                        <p>Python allows you to have multiple except blocks for a single try block. The block which matches with the exception generated will get executed. A try block can be associated with more than one except block to specify handlers
+                            for different exceptions. However, only one handler will be executed. Exception handlers only handle exceptions that occur in the corresponding try block. The syntax for specifying multiple except blocks for a single try block
+                            can be given as,<br></p><img class="img-fluid" src="assets/img/error7.jpg">
+                        <p>Now, let's take a look at an example to better understand this.<br></p><img class="img-fluid" src="assets/img/error8.jpg">
+                        <p>The output of the aforementioned program is given below:<br></p><img class="img-fluid" src="assets/img/error9.jpg">
+                        <p>Note that after the execution of the except block, the program control goes to the first statement after the except block for that try block.<br></p>
+                        <h4 style="color: #800080;"><strong>Error checks vs exception handling</strong><br></h4>
+                        <p>Exception handling gives us an alternative way to deal with error-prone situations in our code. Instead of performing more checks before we do something to make sure that an error will not occur, we just try to do it – and if an
+                            error does occur we handle it. This can allow us to write simpler and more readable code. Let’s look at a more complicated input example – one in which we want to keep asking the user for input until the input is correct. We
+                            will try to write this example using the two different approaches:<br></p><img class="img-fluid" src="assets/img/error10.jpg">
+                        <p>In the first code snippet, we have to write quite a convoluted check to test whether the user’s input is an integer – first we strip off a minus sign if it exists, and then we check if the rest of the string consists only of digits.
+                            But there’s a very simple criterion which is also what we really want to know: will this string cause a ValueError if we try to convert it to an integer? In the second snippet we can in effect check for exactly the right condition
+                            instead of trying to replicate it ourselves – something which isn’t always easy to do. For example, we could easily have forgotten that integers can be negative, and written the check in the first snippet incorrectly.<br></p>
+                        <h4
+                            style="color: #800080;"><strong>The&nbsp;<em>else</em>&nbsp;and&nbsp;<em>finally</em>&nbsp;Clause</strong><br></h4>
+                            <p>The try...except block can optionally have an&nbsp;<em>else clause</em>, which, when present, must follow all except blocks. The statements in the&nbsp;<em>else</em>&nbsp;block is executed only if the try clause does not raise
+                                an exception. For example, the codes given below illustrate both the cases. This will help you to visualize the relevance of the&nbsp;<em>else</em>&nbsp;block.<br><br>Now, let's take a look at an example to better understand
+                                this.<br></p><img class="img-fluid" src="assets/img/error11.jpg">
+                            <p>The output of the aforementioned program is given below:<br></p><img src="assets/img/error12.jpg">
+                            <p>The&nbsp;<em>try</em>&nbsp;block has another optional block called finally which is used to define clean-up actions that must be executed under all circumstances. The&nbsp;<em>finally</em>&nbsp;block is always executed before
+                                leaving the&nbsp;<em>try</em>&nbsp;block. This means that the statements written in&nbsp;<em>finally</em>&nbsp;block are executed irrespective of whether an exception has occurred or not.<br><br>Now, let's take a look at
+                                an example to better understand this.<br></p><img class="img-fluid" src="assets/img/error13.jpg">
+                            <p>The output of the aforementioned program is given below:<br></p><img src="assets/img/error14.jpg">
+                            <h4 style="color: #800080;"><strong>Built-in and User-defined Exceptions</strong><br></h4>
+                            <p>The following table lists some standard exceptions that are already defined in Python. These built-in exceptions force your program to output an error when something in it goes wrong.<br></p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Exception</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Exception</td>
+                                            <td>Base class for all exceptions<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>StopIterator</td>
+                                            <td>Generated when the next() method of an iterator does not point to any object<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SystemExit</td>
+                                            <td>Raised by sys.exit() function<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>StandardError</td>
+                                            <td>Base class for all built-in exceptions<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>ArithmeticError</td>
+                                            <td>Base class for errors that are generated due to mathematical calculations<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>OverflowError</td>
+                                            <td>Raised when the maximum limit of a numeric type is exceeded during a calculation<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>FloatingPointError</td>
+                                            <td>Raised when a floating point calculation could not be performed<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>ZeroDivisionError</td>
+                                            <td>Raised when a number is divided by zero<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>AssertionError</td>
+                                            <td>Raised when the assert statement fails<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>AttributeError</td>
+                                            <td>Raised when attribute reference or assignment fails<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>EOFError</td>
+                                            <td>Raised when end-of-file is reached or there is no input for input() function<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>ImportError</td>
+                                            <td>Raised when an import statement fails<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>KeyboardInterrupt</td>
+                                            <td>Raised when the user interrupts program execution (by pressing Ctrl+C)<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>LookupError</td>
+                                            <td>Base class for all lookup errors<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>IndexError</td>
+                                            <td>Raised when an index is not found in a sequence<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>KeyError</td>
+                                            <td>Raised when a key is not found in the dictionary<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>NameError</td>
+                                            <td>Raised when an identifier is not found in local or global namespace<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>UnboundLocalError</td>
+                                            <td>Raised when an attempt to access a local variable in function or method when no value is assigned to it<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>IOError</td>
+                                            <td>Raised when input or output operation fails<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SyntaxError</td>
+                                            <td>Raised when there is a syntax error in the program<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>IndentationError</td>
+                                            <td>Raised when there is an indentation problem in the program<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SystemError</td>
+                                            <td>Raised when an internal system error occurs<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>ValueError</td>
+                                            <td>Raised when the arguments passed to a function are of invalid types or searching for non-existing value<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>RuntimeError</td>
+                                            <td>Raised when the generated error does not fall into any of the above category<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>TypeError</td>
+                                            <td>Raised when two or more data types are mixed without coercion<br></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>Besides these, Python allows programmers to create their own exceptions by creating a new exception class. The new exception class is derived from the base class&nbsp;<em>Exception</em>&nbsp;which is pre-defined in Python.
+                                The program given below explains this concept.<br></p><img class="img-fluid" src="assets/img/error15.jpg">
+                            <p>The output of the aforementioned program is given below:<br></p><img src="assets/img/error16.jpg">
+                            <p>To get more practical knowledge&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Error%20%26%20Exception%20Handling/Divyankar_Python_Error%26ExceptionHandling.ipynb" target="_blank">Click here.</a><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/error/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
