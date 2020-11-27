@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - File Handling</title>
+    <meta name="description" content="File handling is a process through which we can create a file, store data in it, retrieve data from the file and also append more information in it.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Function &amp; Modules</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Trivedh<br></h4>
+                    </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h3 style="color: #800080;">Function in Python</h3>
+                    <p>Function is a block of code or set of statements that performs a specific task and executes only when called. Complex projects can be broken down into smaller tasks.These small tasks can contain multiple lines of code and can be used
+                        multiple times in the same program<br></p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Syntax</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>def function-name():<br></td>
+                                    <td>def palindrome():<br></td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>In the above syntax:</strong><br><br><strong>def</strong>&nbsp;- to declare/define the function<br><strong>function-name</strong>- name of the function<br><strong>()</strong>&nbsp;- required to distinguish between a variable
+                        and function and end the definition with a semi-colon<br></p><code><br><strong>Example</strong><br>def greet():<br>&nbsp;&nbsp;print("Hello")<br>&nbsp;&nbsp;print("Im a student")<br><br>greet()<br><br></code>
+                    <p><em>Using the above function you can print the greet message multiple times by just calling the function multiple times instead of making the code redundant with print lines.</em><br></p>
+                    <h5><strong>There are two basic types of Functions:</strong><br></h5>
+                    <ul>
+                        <li>Built-in function<br></li>
+                        <li>User defined function&nbsp;<br></li>
+                    </ul>
+                    <h3 style="color: #800080;"><strong>Built-in Function</strong><br></h3>
+                    <p>Built-in functions are part of Python language.These are the functions readily available for the use.<br></p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Function</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>max()</td>
+                                    <td>Returns the largest item in an iterable<br></td>
+                                </tr>
+                                <tr>
+                                    <td>min()</td>
+                                    <td>Returns the smallest item in an iterable<br></td>
+                                </tr>
+                                <tr>
+                                    <td>input()</td>
+                                    <td>To accept the input from the user<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 style="color: #800080;">User Defined Function</h3>
+                    <p>User defined functions are not in-built and are not a part of Python programming language.Any name can be given to the function.These are the functions are defined according to the need of the user to carry out the tasks.<br></p>
+                    <div
+                        class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Function&nbsp;</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><br>def sub(x,y):<br>&nbsp; diff=x-y<br>&nbsp; print(diff)<br><br>sub(7,4)<br><br></td>
+                                    <td><br>Prints the difference between two numbers<br><br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <h3 style="color: #800080;">Function can return values</h3>
+                <p><br>Consider the given two scenarios:<br><br>1. Hey Sohal, Please inform boss that I'll be late to the office today.<br><br>2. Hey Sohal, May i know when does the meeting start?<br><br><em>Clearly in the first scenario,The speaker is just asking his friend Sohal to inform his boss that he will be late today. But, he's not expecting a reply. He is just informing. Whereas in the second case, the speaker is asking his friend about the meeting time. Therefore he's expecting a reply in return.</em><br><em>In a similar way, the functions will also return the values required after the computation. It can be clearly explained by the below provided example.</em><br></p><code><br><strong>Example:</strong>def add(x,y):<br>&nbsp;&nbsp;c=x+y<br>&nbsp;&nbsp;return c<br><br>result=add(5,4)<br>print(result)<br><br><strong>Output:</strong>&nbsp;9<br>In the above example, the value returned by the function stores in the variable&nbsp;<em>"result"</em>&nbsp;and the desired output is printed on the console.<br><br></code>
+                <h3
+                    style="color: #800080;"><strong>Function returning two values:</strong><br></h3>
+                    <p>A function can return two values in a similar way as the first one, but two variables have to be initialized to store the two values returned by the function after computation.<br></p><code><br><strong>Example</strong>def add_sub(x,y):<br>&nbsp;&nbsp;c=x+y<br>&nbsp;&nbsp;d=x-y;<br>&nbsp;&nbsp;return c,d<br><br>result1,result2=add_sub(5,4)<br>print(result1,result2)<br><br></code>
+                    <h3
+                        style="color: #800080;">Function Arguments</h3>
+                        <p>Arguments are used to feed information to the functions i.e to pass the information. Any number of arguments can be passed. They are declared inside the parenthesis after the function name.<br></p><code><br><strong>Example</strong><br>def add(x,y):<br>&nbsp;&nbsp;c=x+y<br>&nbsp;&nbsp;print(c)<br><br>add(5,4)<br><br></code>
+                        <p>In the above code, the variables&nbsp;<em>x</em>&nbsp;and&nbsp;<em>y</em>&nbsp;are&nbsp;<strong>Formal arguments</strong>&nbsp;and numbers&nbsp;<em>5</em>,<em>4</em>&nbsp;are&nbsp;<strong>Actual Arguments</strong><br></p>
+                        <p><strong>Types Function Argument :</strong></p>
+                        <ul>
+                            <li>Position Arguments</li>
+                            <li>Keyword Arguments</li>
+                            <li>Default Arguments</li>
+                            <li>Variable Length Arguments</li>
+                            <li>Keyword Variable Length Arguments<br></li>
+                        </ul>
+                        <h3 style="color: #800080;">Keyword Argument</h3>
+                        <p>Keyword Arguments are used in the function call which passes the arguments along with a keyword. This facilitates the user to pass the arguments in a non positional order.If the sequence of the arguments is not known, keyword arguments
+                            can be used in a function call.<br></p><code><br>Example:<br><br>def student(name,age):<br>&nbsp;&nbsp;print(name)<br>&nbsp;&nbsp;print(age)<br><br>student(age=28,name='paul')<br><em>Output:</em>&nbsp;paul 28<br><br></code>
+                        <h3
+                            style="color: #800080;"><strong>Default Arguments</strong><br></h3>
+                            <p>It's a type of argument which assumes a default value if a particular value is not mentioned in the function call.If a user does'nt provide a particular argument the default value in the function definition will be assigned
+                                autonomously to the that particular argument.<br></p><code><br><strong>Example:def student(name,age=18):</strong><br><strong>&nbsp;&nbsp;print(name)</strong><br><strong>&nbsp;&nbsp;print(age)</strong><br><br><strong>student('paul')</strong><br><strong><em>Output:</em>&nbsp;paul</strong><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18</strong><br><br></code>
+                            <h3
+                                style="color: #800080;">Variable Argument</h3>
+                                <p>Variable Arguments are the arguments used in the function calls when a function has to compute more arguments than the arguments in the function definition or when the accurate value of arguments is not known.They are not
+                                    named like Default or positional arguments.They are named with an asterisk before the variable-name that holds multiple or non keyword arguments.<br></p><code><br><strong>Example:def sum(a,*b): &nbsp;&nbsp;c=a;</strong><br><strong>&nbsp;&nbsp;for i in b:</strong><br><strong>&nbsp;&nbsp;&nbsp;c=c+i</strong><br><strong>&nbsp;&nbsp;print(c)</strong><br><br><strong>sum(5,6,34,78)</strong><br><br><br><strong><em>Output:</em>&nbsp;123</strong><br><br></code>
+                                <h3
+                                    style="color: #800080;">Position Argument</h3>
+                                    <p>Positional Arguments are the arguments passed in a positional/sequential order. The number of arguments passed should match the function definition. If the arguments are passed in a non-sequential order, then function
+                                        computation will throw an error.<br></p><code><br><strong>Example:</strong><br><br><strong>def student(name,age):</strong><br><strong>&nbsp;&nbsp;print(name)</strong><br><strong>&nbsp;&nbsp;print(age)</strong><br><br><strong>student('paul',28)</strong><br><br><strong><em>Output:</em>&nbsp;paul&nbsp;28</strong><br><br></code>
+                                    <p>In the above example&nbsp;<em>'paul'</em>&nbsp;and&nbsp;<em>28</em>&nbsp;were passed as actual arguments and they were assigned to the formal arguments in the declared function without an error,as they were passed in
+                                        a sequential order.<br></p>
+                                    <h3 style="color: #800080;">Keyword Variable Length Arguments<br></h3>
+                                    <p><strong>Keyworded Variable Arguments are the arguments with a special syntax **kwargs in function definitions in python is used to pass a keyworded,variable-length argument list.</strong><br></p><code><br><strong>Example:</strong><br><strong>def myname(**b):</strong><br><strong>&nbsp;&nbsp;for key, value in b.items():</strong><br><strong>&nbsp;&nbsp;&nbsp;print ("%s == %s" %(key, value))</strong><br><br><strong>myname(first ='John', mid ='Mathew', last='roy')</strong><br><br><strong><em>Output:</em>&nbsp;last == John</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp; mid == Mathew</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp; first == roy</strong><br><br></code>
+                                    <h3
+                                        style="color: #800080;">Recession</h3>
+                                        <p>Recursion is a process of calling a function from the same function repeatedly. It means a defined function can call itself. It reduces the complexity of a program.<br></p><code><br><strong>def fact(n):</strong><br><strong>&nbsp;&nbsp;if n==0:</strong><br><strong>&nbsp;&nbsp;&nbsp;return 1</strong><br><strong>&nbsp;&nbsp;return n*fact(n-1)</strong><br><strong>result=fact(5)</strong><br><strong>print(result)</strong><br><br><strong>Output:&nbsp;120</strong><br><br></code>
+                                        <h3
+                                            style="color: #800080;">Lambda or Anonymous Function<br></h3>
+                                            <p>As the name suggests, these are the functions without any name.It's a kind of function, which is not defined in an usual manner with&nbsp;<em>def</em>. Lambda function returns only a single value. It can accept
+                                                any number of arguments.It has to be assigned to a variable<br></p><code><br><strong>Example1:</strong><br><br><strong>f = lambda a: a+a</strong><br><strong>result=f(5)</strong><br><strong>print(result)</strong><br><strong><em>Output:</em>&nbsp;10</strong><br><br><strong>Example2: </strong><br><br><strong>g = lambda b,c: b-c</strong><br><strong>result1=g(6,5)</strong><br><strong>print(result1)</strong><br><strong><em>Output:</em>&nbsp;1</strong><br><br></code>
+                                            <p><strong>You can find the execution of the above mentioned examples in the following Jupyter file</strong>&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Function/Trivedh_Python_Functions.ipynb"
+                                                    target="_blank">here.</a><br></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/function/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
