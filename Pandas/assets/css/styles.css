@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto';
+}
+
+#sidetab .table-responsive.text-left {
+  border-radius: 10px;
+  border: 1px solid #dedede;
+}
+
+#hero #base p {
+  display: inline;
+  padding: 10px;
+}
+
+#sidetab #main {
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+  border-radius: 10px;
+  font-family: 'Roboto';
+  background: #fff;
+}
+
+#sidetab .col-md-6 pre {
+  background-color: #dedede;
+  padding: 5px;
+}
+
+#navigation {
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+footer .btn {
+  color: #6aacf3;
+  background: transparent;
+  border-color: #6aacf3;
+  border-radius: 40px;
+  opacity: 0.6;
+  font-size: 24px;
+  margin: 0 5px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+footer .btn:hover {
+  opacity: 0.8;
+  background: transparent !important;
+  color: #6aacf3 !important;
+}
+
