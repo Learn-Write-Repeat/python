@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Variables</title>
+    <meta name="description" content="Variables are the names you give to computer memory locations which are used to store values in a computer program OR Variables are containers for storing values.A variable is created the moment you first assign a value to it.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Variables</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Mahendra Reddy<br></h4><a href="reddymahendra52@gmail.com." target="_blank" style="padding: 0 5px;"><i class="fa fa-envelope" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h2 style="color: #800080;">Variables</h2>
+                    <p>Variables are the names you give to computer memory locations which are used to store values in a computer program&nbsp;<strong>OR</strong>&nbsp;Variables are containers for storing values.A variable is created the moment you first
+                        assign a value to it.<br></p><code>Name= 'John'<br>   Age= 19<br>   Company= 'DevIncept'<br>   print(Name,Age,Company)<br><br></code>
+                    <p><strong>Output:</strong></p><code>John 19 DevIncept<br></code>
+                    <ul></ul>
+                    <p>As we can see in the above example&nbsp;<strong>Name, Age</strong>&nbsp;and&nbsp;<strong>Company</strong>&nbsp;are three different variables all having different values.And when the variable names are called in the&nbsp;<strong><em>print</em></strong>&nbsp;function
+                        they are printed on the screen.<br><br>A variable can store only one value, as we continue through the program from top to bottom,&nbsp;<strong>if the same variable name is assigned with different value the new value takes over the previous one</strong>,Variables
+                        do not need to be declared with any particular type and can even change type after they have been set..As in the below example:<br></p><code>x=19<br>  x='DevIncept'<br>  print(x)<br><br>Output: DevIncept<br><br></code><code>x=19<br>  x=23<br>  print(x)<br><br>Output: 23<br></code>
+                    <p><br><strong>Unlike other programming languages, Python has no command for declaring a variable.</strong><br><br></p>
+                    <h4 style="color: #800080;"><strong>Naming of Variables</strong><br></h4>
+                    <p>As we now know what are variables and how are they used now lets see some very important rules to create a valid Variable Name.&nbsp;<br><br><strong>Note: Rules for Naming of Variables are same in almost all programming languages.</strong><br></p>
+                    <ul>
+                        <li>A variable name must start with a letter or the underscore character.<br></li>
+                        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )<br></li>
+                        <li>A variable name cannot start with a number<br></li>
+                        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)<br></li>
+                        <li>There should be no spaces in the words<br></li>
+                    </ul><code>#Valid Variable names<br>   myvariable1="DevIncept"<br>   my_variable="JaneDoe"<br>   _variable=17<br>   <br>  #Invalid Variable names<br>   invalid-variable='Mahendra'<br>   8variable=19<br>   invalid name='Doe'<br><br></code>
+                    <p>When you run the above lines of code when the Pyhton Interpreter reaches Invalid Variable names it raises an Syntax Error.Don't worry check your code correct it and carry on.<br></p><img class="img-fluid" src="assets/img/variable.jpg">
+                    <p><br><strong>Shorthand for assigning multiple variables in one line</strong><br></p><code>fruit,color,cost= "Apple","Green",15.75<br>  print(fruit)<br>  print(color)<br>  print(cost)<br><br></code><code><strong>Result:</strong>Apple Green 15.75&nbsp;So this here finishes the basics of Variables hope you enjoyed the topics.<br><br></code>
+                    <h4
+                        style="color: #800080;"><strong>Data Types</strong><br></h4>
+                        <p>Remember all those variables which we created in the above lessons, we saw there were plain&nbsp;<strong>numbers, decimal numbers</strong>, and&nbsp;<strong>simple text</strong>. These are nothing but different&nbsp;<strong>Data Types</strong>.
+                            !!!Shocker huh, all this time you were using data types and you didn't know what they were.<br></p>
+                        <ul>
+                            <li>In programming, data type is an important concept.<br></li>
+                            <li>Variables can store data of different types, and different types can do different things.<br></li>
+                        </ul>
+                        <p><strong>Data Types Table</strong><br></p>
+                        <p>Some basic and most commonly used datatypes.<br></p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Data Type</th>
+                                        <th>Abbreviation</th>
+                                        <th>Example</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>str</td>
+                                        <td>text type</td>
+                                        <td>'Ron', 'Remi'<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>int</td>
+                                        <td>integers</td>
+                                        <td>10,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bool</td>
+                                        <td>True/False</td>
+                                        <td>True, False</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Above mentioned Data types are most commonly used. And whenever you are not sure what datatype the object is you can use the&nbsp;type()&nbsp;function.<br></p><code>name="DevIncept"<br>  print(type(name))<br><br><strong>Result:</strong>&nbsp;&lt;class 'str'&gt;<br><br></code><code>age=20<br>  print(type(age))<br><br><strong>Result:</strong>&nbsp;&lt;class 'int'&gt;<br><br></code>
+                        <h4><strong>Python Numbers</strong></h4>
+                        <ul>
+                            <li>int: Int, or integer, is a whole number, positive or negative,&nbsp;<strong>without decimals</strong>, of unlimited length.<br></li>
+                            <li>float: Float, or "floating point number" is a number, positive or negative, containing&nbsp;<strong>one or more decimals</strong>.<br></li>
+                        </ul><code>#int<br>  x=123<br>  y=-987<br>  z=687969176975<br>  <br>  #float<br>  a=23.897<br>  b=-4.87970879879<br>  <br>  print(type(x))<br>  print(type(y))<br>  print(type(z))<br>  print(type(a))<br>  print(type(b))<br><br></code><code><strong>Result:</strong><br><br>&lt;class 'int'&gt;<br>   &lt;class 'int'&gt;<br>   &lt;class 'int'&gt;<br>   &lt;class 'float'&gt;<br>   &lt;class 'float'&gt;<br><br></code>
+                        <p><strong>In real world what do we do with numbers???</strong>&nbsp;Calculations right, in python also we can tell the program to do calculations.<br></p><code>a=30<br>   b=20<br>   sum=a+b #does the addition<br>   diff=a-b #does the subtraction<br>   div=a/b #does the division<br>   print(sum)<br>   print(diff)<br>   print(div)<br><br></code><code><strong>Result:</strong><br><br> 50<br>    10<br>    1.5<br><br></code>
+                        <p><strong>Type Conversion</strong><br><br>You can convert one type to another by using int(),float() methods.<br></p><code>a=5 #int<br>   b=7.7 #float<br>   <br>   #converting from int to float:<br>   x=float(a)<br>   <br>   #converting from float to int:<br>   y=int(b)<br>   <br>   print(x)<br>   print(y)<br>   print(type(x))<br>   print(type(y))<br><br></code><code><strong>Result:</strong><br><br>  5.0<br>   7<br>   &lt;class 'float'&gt;<br>   &lt;class 'int'&gt;<br><br></code>
+                        <p><strong>Note</strong>: You can also specify the type in the starting only its called Python Casting<br></p><code>x=int("56") # x will be 56 <br>   y=int(8.9)  # y will be 8<br>   z=float(56) # z will be 56.0<br>   a=str(56)   # a will be '56'<br><br></code>
+                        <h4><strong>Python Strings</strong></h4>
+                        <p>String literals in python are surrounded by either single quotation marks, or double quotation marks.&nbsp;'hello'&nbsp;is the same as&nbsp;"hello".<br></p><code>print('hello')<br>   print("hello")<br>   <br>   #Strings assigned in variables<br>   a= 'DevIncept'<br>   print(a)<br>   <br>   #Multiline Strings<br>   a = """Lorem ipsum dolor sit amet,<br>   consectetur adipiscing elit,<br>   sed do eiusmod tempor incididunt<br>   ut labore et dolore magna aliqua."""<br>   print(a)<br><br></code><code><strong>Result:</strong><br><br>  hello<br>   hello<br>   DevIncept<br>   Lorem ipsum dolor sit amet,<br>   consectetur adipiscing elit,<br>   sed do eiusmod tempor incididunt<br>   ut labore et dolore magna aliqua.<br><br></code>
+                        <p><strong>Strings are very important Data types, There are lots of things you can do with strings</strong>&nbsp;For example: Square brackets can be used to access elements of the string.<br></p><code>a='DevIncept'<br>   print(a[0]) #prints the first letter<br>   print(a[-1]) #prints the last letter<br>   print(a[2]) #prints the third letter<br><br></code>
+                        <p>You must be wondering i told it will print the first letter but wrote zero(0) in the square bracket.??😄&nbsp;That's a totally valid question. All programming languages are mostly zero-indexed meaning the positioning of the first
+                            letter is the considered as zero(0) and not one(1)<br></p><code><strong>Result:</strong><br><br> D<br>   t<br>   v<br><br></code>
+                        <p><strong>String Concatenation</strong><br>Concatenation in general means to combine things. As the general meaning, in programming also it means the same you can combine strings using&nbsp;<strong>+</strong>&nbsp;operator<br></p><code>a="DevIncept "<br>   b="is a great "<br>   c="Company"<br>   print(a+b+c)<br><br><strong>Result:</strong><br>   DevIncept is a great Company<br><br></code>
+                        <p><strong>String Slicing</strong><br>You can return a range of characters by using the string slicing.&nbsp;<strong>Specify the start index and the end index(<em>not included</em>), separated by a colon, to return a part of the string.</strong><br></p><code>a='DevIncept'<br>   print(a[0:3])<br><br><strong>Result:</strong><br>Dev<br><br><br></code>
+                        <p><strong>String Methods</strong><br>String Methods are nothing but pyhton built in fuctions to make our life easy...<br></p><code>a='DevIncept'<br>   print(a.lower()) # all lowercase<br>   print(a.upper()) # all uppercase<br><br><strong>Result:</strong><br><br>devincept<br>   DEVINCEPT<br><br></code>
+                        <img
+                            class="img-fluid" src="assets/img/error9.jpg">
+                            <p>Note that after the execution of the except block, the program control goes to the first statement after the except block for that try block.<br></p>
+                            <h4><strong>Escape Characters</strong></h4>
+                            <p>To insert characters that are illegal in a string, use an escape character. An escape character is a backslash \ followed by the character you want to insert.<br></p><code>txt = "We are the so-called \"Vikings\" from the north."<br>   print(txt)<br><br><strong>Result:</strong>   We are the so-called "Vikings" from the north.<br><br></code>
+                            <p><strong>Other Escape Characters used in python are:</strong><br></p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Result</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\'</td>
+                                            <td>Single Quote</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\\</td>
+                                            <td>Backslash</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\n</td>
+                                            <td>New Line</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\r</td>
+                                            <td>Carriage Return<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>\t</td>
+                                            <td>Tab<br></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4><strong>Python Boolean</strong></h4>
+                            <p>In programming you often need to know if an expression is True or False. You can evaluate any expression in Python, and get one of two answers, True or False.<br></p><code>print(10 &gt; 9)<br>   print(10 == 10)<br>   print(10 &lt; 9)<br>   <br>   a=100<br>   b=200<br>   print(a&gt;b)<br><br><strong>Result:</strong><br>True<br>   True<br>   False<br>   False<br><br></code>
+                            <p>To get more practical knowledge&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Variables/Mahendra_Python_Var%2CDatatypes.ipynb" target="_blank">Click here.</a><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/variables/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
