@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Speech Recognition</title>
+    <meta name="description" content="Speech recognition, the ability of devices to respond to spoken commands. Speech recognition enables hands-free control of various devices and equipment (a particular boon to many disabled persons), provides input to automatic translation, and creates print-ready dictation.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Speech&nbsp;<br><strong>Recognition&nbsp;</strong></h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Mahendra Reddy<br></h4><a href="reddymahendra52@gmail.com." target="_blank" style="padding: 0 5px;"><i class="fa fa-envelope-o" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h2 style="color: #800080;"><strong>Python SpeechRecognition (Speech to Text)&nbsp;</strong><br></h2>
+                    <h3 style="color: #800080;"><strong>What is Speech Recognition??</strong><br></h3>
+                    <p>Speech recognition, the ability of devices to respond to spoken commands. Speech recognition enables hands-free control of various devices and equipment (a particular boon to many disabled persons), provides input to automatic translation,
+                        and creates print-ready dictation.<br><br><strong>In Simple words: Speech recognition</strong>&nbsp;system basically translates spoken language into text.<br></p>
+                    <ul></ul>
+                    <h4 style="color: #800080;"><strong>How Speech Recognition works??</strong><br></h4>
+                    <p>Without all the&nbsp;<strong>Technical Details</strong>&nbsp;in simple words we can say:<br><br>The first component of speech recognition is, of course, speech. Speech must be converted from physical sound to an electrical signal with
+                        a microphone, and then to digital data with an analog-to-digital converter. Once digitized, several models can be used to transcribe the audio to text.<br><br>Most modern speech recognition systems rely on what is known as a Hidden
+                        Markov Model&nbsp;(HMM).<br></p><img class="img-fluid" src="assets/img/speech1.png">
+                    <h4 style="color: #800080;"><br><strong>Python Speech Recognition Packages</strong><br></h4>
+                    <ul>
+                        <li>Google Speech Recognition<br></li>
+                        <li><a href="https://cmusphinx.github.io/wiki/">CMU Sphinx</a>&nbsp;(Works offline)</li>
+                        <li><a href="https://pypi.org/project/wit/">wit</a><br></li>
+                        <li><a href="https://pypi.org/project/watson-developer-cloud/">watson-developer-cloud</a><br></li>
+                        <li><a href="https://pypi.org/project/google-cloud-speech/">Google cloud speech</a><br></li>
+                    </ul>
+                    <p>There is one package that stands out in terms of ease-of-use and we are gonna use this package:&nbsp;<strong>SpeechRecognition</strong>.<br></p>
+                    <h4 style="color: #800080;"><strong>Installing the Required Packages</strong><br></h4>
+                    <h5><strong>1.&nbsp;You can install SpeechRecognition from a terminal with pip:</strong><br></h5><code>pip install SpeechRecognition<br></code><img class="img-fluid" src="assets/img/speech2.png">
+                    <p><br><strong>OR</strong>&nbsp;You can download the package and extract it in the required folder ---&gt;&gt;&nbsp;<a href="https://pypi.org/project/SpeechRecognition/#files">Download</a><br><br><strong>Once installed, you should verify the installation by opening an interpreter session and typing:</strong><br></p><code>&gt;&gt;&gt; import speech_recognition as sr<br>   &gt;&gt;&gt; sr.__version__<br>       '3.8.1'<br><br></code>
+                    <img
+                        class="img-fluid" src="assets/img/speech3.png">
+                        <h5><br><strong>2.&nbsp;Installing PyAudio using pip:</strong><br></h5>
+                        <p>We need to install PyAudio library which used to receive audio input and output through the microphone and speaker. Basically, it helps to get our voice through the microphone.<br></p><code>pip install PyAudio<br><br></code>
+                        <img
+                            class="img-fluid" src="assets/img/speech4.png">
+                            <p><br>Since I have already installed it.It shows requirement satisfied..<br></p>
+                            <h5><strong>If you have any errors trying to install using&nbsp;<em>(pip)</em>&nbsp;follow these simple steps below:</strong><br></h5>
+                            <p>Find your python version,the easiest way to check either you have 64 or 32 Python just open it in the terminal:<br></p><img class="img-fluid" src="assets/img/speech5.png">
+                            <ul>
+                                <li>Find the appropriate&nbsp;.whl&nbsp;file from&nbsp;<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio">here</a>,&nbsp;<strong>for example:</strong>&nbsp;mine is&nbsp;PyAudio-0.2.11-cp38-cp38-win32, and download
+                                    it.<br></li>
+                                <li>Go to the folder where you saved it after downloading&nbsp;<strong>for example:</strong>C:\Users\P\Desktop\Python\Scripts<br></li>
+                                <li>Install the&nbsp;.whl&nbsp;file with&nbsp;pip&nbsp;for example:<br></li>
+                            </ul><code>pip install PyAudio-0.2.11-cp38-cp38-win32.whl<br><br></code><img class="img-fluid" src="assets/img/speech6.png">
+                            <h3 style="color: #800080;"><br><strong>Without using Microphone/Using an Audio File:</strong><br></h3>
+                            <ul>
+                                <li><strong>Works without PyAudio</strong><br></li>
+                                <li><strong>Import Speech recognition library</strong><br></li>
+                            </ul><code>import speech_recognition as sr<br><br></code>
+                            <ul>
+                                <li><strong>Initializing recognizer class in order to recognize the speech. We are using google speech recognition.</strong><br></li>
+                            </ul><code>r = sr.Recognizer()<br><br></code>
+                            <ul>
+                                <li><strong>Audio file supports by speech recognition: wav, AIFF, AIFF-C, FLAC. I used ‘wav’ file in this example</strong><br></li>
+                            </ul><code>with sr.AudioFile('male.wav') as source:<br>      audio_text = r.listen(source)<br>      try:<br>         # using google speech recognition<br>         print('Converting audio transcripts into text ...')<br>         text = r.recognize_google(audio_text)<br>         print(text)<br>     except:<br>         print('Sorry.. run again...')<br><br></code>
+                            <p>I have used a random&nbsp;.wav&nbsp;from internet.You can also download&nbsp;.wav&nbsp;files from internet and try speech recognition on them You need to be&nbsp;<strong>aware that this is a very basic speech recognition program</strong>&nbsp;so
+                                you can't expect everything to be correct....<br></p>
+                            <ul>
+                                <li><strong>This was the result for the following&nbsp;</strong><a href="https://www.signalogic.com/melp/EngSamples/Orig/male.wav"><strong>male.wav</strong></a><strong>&nbsp;file.</strong><br></li>
+                            </ul><img class="img-fluid" src="assets/img/speech7.png">
+                            <p><strong>Final Program:</strong></p><code>#import library<br>   import speech_recognition as sr<br>   # Initialize recognizer class (for recognizing the speech)<br>   r = sr.Recognizer()<br>   # Reading Audio file as source<br>   # listening the audio file and store in audio_text variable<br>   with sr.AudioFile('male.wav') as source:<br>      audio_text = r.listen(source)<br>      # recoginize_() method will throw a request error if the API is unreachable, hence using exception handling<br>      try:<br>         # using google speech recognition<br>         print('Converting audio transcripts into text ...')<br>         text = r.recognize_google(audio_text)<br>         print(text)<br>      except:<br>         print('Sorry.. run again...')<br><br></code>
+                            <h4
+                                style="color: #800080;"><strong>Using Microphone for Speech Recognition</strong><br></h4>
+                                <ul>
+                                    <li><strong>Need to install PyAudio</strong><br></li>
+                                    <li><strong>Instead of audio file source, we have to use the Microphone class. Remaining steps are the same.</strong><br></li>
+                                </ul>
+                                <p><strong>Final Program:</strong><br></p><code>#import library<br>   import speech_recognition as sr<br>   # Initialize recognizer class (for recognizing the speech)<br>   def recog():<br>      r = sr.Recognizer()<br>      # Reading Microphone as source<br>      # listening the speech and store in audio_text variable<br>      with sr.Microphone() as source:<br>         print("Talk")<br>         audio_text = r.listen(source)<br>         print("Time over, thanks")<br>         # recoginize_() method will throw a request error if the API is unreachable, hence using exception handling<br>         try:<br>            # using google speech recognition<br>            print("Converting audio transcripts into text ...")<br>            print("Text: "+r.recognize_google(audio_text))<br>        except:<br>            print("Sorry, I did not get that")<br><br>   while(True):<br>      recog()<br>      x=input("Would you like to try again?? Type(yes/no)")<br>      if (x=='yes'):<br>         continue<br>      elif (x=='no'):<br>         print("Hope you liked this program!!!")<br>         break<br>      else:<br>         print("Invalid option")<br>         break<br><br></code>
+                                <p><strong>Output:</strong><br></p><img class="img-fluid" src="assets/img/speech8.png">
+                                <p>To get more practical knowledge&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Speech%20Recongnition/Mahendra_Python_SpeechRecognition.ipynb" target="_blank">Click here.</a><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/speech/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
