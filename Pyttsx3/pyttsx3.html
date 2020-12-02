@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Pyttsx3</title>
+    <meta name="description" content="Text-to-speech is a type of speech synthesis application that is used to create a spoken sound version of the text in a computer document, such as a help file or a Web page.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Pyttsx3</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Anshuman Samal</h4><a href="https://github.com/Ansuman9020" style="color: #030431;padding: 5px;font-size: 25px;" target="_blank"><i class="fa fa-github"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h2 style="color: #800080;"><strong>Introduction to&nbsp;<em>pyttsx3</em>&nbsp;python library</strong><br></h2>
+                    <ul>
+                        <li><strong>Text-to-speech</strong>&nbsp;is a type of&nbsp;<strong>speech</strong>&nbsp;synthesis application that is used to create a spoken sound version of the&nbsp;<strong>text</strong>&nbsp;in a computer document, such as a help
+                            file or a Web page.<br></li>
+                        <li><strong>Text-to-speech</strong>&nbsp;is commonly used as an accessibility feature to help people who have trouble reading on-screen&nbsp;<strong>text</strong>&nbsp;may be due to more brightness.<br></li>
+                        <li>There are several APIs available to convert text to speech in python. One of them is the Python Text to Speech API commonly known as the&nbsp;<strong>pyttsx3</strong>&nbsp;API.<br></li>
+                        <li>It a very easy to use tool which converts the text entered, into audio.<br></li>
+                    </ul>
+                    <h5><strong>What is pyttsx3 library?</strong><br></h5>
+                    <p><em>pyttsx3</em>&nbsp;is a text-to-speech conversion library in Python. It is a cross-platform text to speech library which is platform independent. The major advantage of using this library for text-to-speech conversion is that it
+                        works offline.<br></p>
+                    <h5><strong>Why pyttsx3?</strong><br></h5>
+                    <ul>
+                        <li>Other text-to-speech APIs may work only in online mode but&nbsp;pyttsx3&nbsp;library works in offline mode also.<br></li>
+                        <li>Without saving the text as audio file, pyttsx speaks it there which makes it more reliable to use for voice-based projects.<br></li>
+                        <li>pyttsx3&nbsp;supports two voices first is female and the second is male which is provided by “sapi5” for windows.<br></li>
+                        <li>We can change the voice, volume and set the rate of the voice.<br></li>
+                    </ul>
+                    <h5><strong>Installation</strong></h5>
+                    <p><em>To install the&nbsp;pyttsx3&nbsp;API, open terminal and write:</em><br></p><code>$ pip install pyttsx3<br><br></code>
+                    <p><em>We may get an error while executing the program as it is dependent on win32. To avoid this error simply install&nbsp;pypiwin32&nbsp;in your environment-</em><br></p><code>$ pip install pypiwin32<br><br></code>
+                    <h5><strong>Lets get started</strong></h5>
+                    <p>Listed are the functions:<br></p>
+                    <ul>
+                        <li><strong>pyttsx3.init([driverName : string, debug : bool])</strong>&nbsp;– Gets a reference to an engine instance that will use the given driver. If the requested driver is already in use by another engine instance, that engine
+                            is returned. Otherwise, a new engine is created.<br></li>
+                        <li><strong>getProperty(name : string)</strong>&nbsp;– Gets the current value of an engine property.<br></li>
+                        <li><strong>setProperty(name, value)</strong>&nbsp;– Queues a command to set an engine property. The new property value affects all utterances queued after this command.<br></li>
+                        <li><strong>say(text : unicode, name : string)</strong>&nbsp;– Queues a command to speak an utterance. The speech is output according to the properties set before this command in the queue.<br></li>
+                        <li><strong>runAndWait()</strong>&nbsp;– Blocks while processing all currently queued commands. Invokes callbacks for engine notifications appropriately. Returns when all commands queued before this call are emptied from the queue.<br></li>
+                    </ul>
+                    <h5><strong>Simple Demo:</strong></h5><code>import pyttsx3<br>engine = pyttsx3.init()<br>engine.say(" -Text to be spoken- ")<br>engine.runAndWait()<br></code>
+                    <p>Above show about the library, why it can be used and how to install as well as use with a simple example.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/pyttsx3/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
