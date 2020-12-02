@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - Web Scraping</title>
+    <meta name="description" content="Web scraping is the technique for extracting the relevant information from a webpage. Web scraping allows user to get the relevant information from any websites and it can be done manually as well as with the help of bots as well.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Web Scraping</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Swapnil Rawat<br></h4><a href="https://github.com/swapnilr17" target="_blank" style="padding: 0 5px;"><i class="fa fa-github" style="font-size: 25px;color: #030431;"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h3 style="color: #800080;"><strong>What is Web Scraping?</strong><br></h3>
+                    <p>Web scraping is the technique for extracting the relevant information from a webpage. web scraping allows user to get the relevant information from any websites and it can be done manually as well as with the help of bots as well.<br></p>
+                    <ul></ul>
+                    <h3 style="color: #800080;"><strong>Why Python for Web Scraping?</strong><br></h3>
+                    <p>Python has become one of the widely used programming language and with its easy to learn syntax and huge number of libraries such as BeautifulSoup, Scrapy , Pandas etc, it is one of the most preferred programming language for web scraping.<br></p>
+                    <h3
+                        style="color: #800080;"><strong>Things to know before getting started with Web Scraping</strong><br></h3>
+                        <ul>
+                            <li>Web Scraping might be against the terms of service of some websites so it is suggested that first contact the administrator before starting web scraping.<br></li>
+                            <li>Main step to start web scraping is to observe the webpage and inspect the source code of the website thoroughly.<br></li>
+                            <li>&nbsp;You should have some basic knowledge of HTML and CSS before starting web scraping because you will mostly deal with HTML and CSS code so this step is mandatory.<br></li>
+                        </ul>
+                        <h3 style="color: #800080;"><strong>Libraries Required</strong><br></h3>
+                        <h5><strong>1. Requests</strong><br></h5>
+                        <p>It is the library which is used to make HTTP requests from python program.<br></p>
+                        <p>For Python 3<br></p><code>pip install requests</code>
+                        <p>For Python 2.x<br></p><code>pip install bs4<br></code>
+                        <p><br>Method for requests mode<br><strong>get():&nbsp;</strong>get function sends the get requests to the given url which then returns a response object<br><br></p><code>Example:<br>import requests<br>source = requests.get(url)source.status_code<br><br></code><code>Output: 200<br></code>
+                        <h5><br><strong>2. Beautifulsoup</strong><br></h5>
+                        <p>BeautifulSoup is a python library used for parsing the HTML and XML data. We can iterated through all the data.<br>You can read complete beautifulsoup documentation&nbsp;<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+                                target="_blank">here</a><br></p>
+                        <p>For python 3:</p><code>pip3 install requests<br><br></code>
+                        <p>For python 2.x</p><code>pip install bs4<br><br></code>
+                        <p><strong>Using BeautifulSoup Library</strong><br></p><code>import requests<br>import bs4<br>source = requests.get(url)<br>soup = bs4.BeautifulSoup(source.text,lxml)<br><br></code>
+                        <p><strong>select () :&nbsp;</strong>select() returns the list type object with the tag<br></p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Command</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>select('tag')<br></td>
+                                        <td>tag is the name of any HTML tag<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>select('.class_name')<br></td>
+                                        <td>class name of the tag will always start with.<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>select('#id')<br></td>
+                                        <td>name of id of the tag will always start with #<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>select('tag1 tag2')<br></td>
+                                        <td>tag1 is the main tag while tag2 is the tag which is enclosed within the main tag<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>select('tag1 &gt; tag2')<br></td>
+                                        <td>tag1 is the main tag while tag2 is the directly enclosed within the main tag<br></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul>
+                            <li>Using select() to grab the title of the webpage<br></li>
+                        </ul><code>title = soup.select('title')<br><br></code>
+                        <ul>
+                            <li>Using select() to grab the data from a specific tag<br></li>
+                        </ul><code>tag = soup.select("div")<br><br></code>
+                        <ul>
+                            <li>Using Select() to get the data from an attribute of a tag<br></li>
+                        </ul><code>tag = soup.select("img")<br>tag["src"]<br><br></code>
+                        <ul>
+                            <li>Using select() to get data from the tag with specific id<br></li>
+                        </ul><code># id will always start with #<br>id_data = soup.select("#id")<br><br></code>
+                        <ul>
+                            <li>Using select() to get data from the tag with specific class<br></li>
+                        </ul><code># class will always start with .<br>id_data = soup.select(".class")<br><br></code>
+                        <p>To get more practical knowledge&nbsp;<a href="https://github.com/Learn-Write-Repeat/python/blob/main/Web%20Scraping/Swapnil_Python_Web_Scraping.ipynb" target="_blank">Click here.</a><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/matplotlib/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
