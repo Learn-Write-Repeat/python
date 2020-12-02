@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python - PyZMQ</title>
+    <meta name="description" content="A WebSocket is a standard protocol for two-way data transfer between a client and server. The WebSockets protocol does not run over HTTP, instead it is a separate implementation on top of TCP. WebSocket is used for Real-Time Application and it uses single TCP Connection it means it establishes connection only once and header request is sent only once.
+">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="width: 170px;height: 65px;background: url(&quot;assets/img/CODES.gif&quot;) center / cover no-repeat;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;font-weight: bold;">
+                <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;">
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link active" href="https://devincept.tech/contribute.html" style="font-size: 13px;">Contribute</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/pricing.html" style="font-size: 13px;">Free courses</a></li>
+                    <li class="nav-item" style="padding: 0 15px;"><a class="nav-link" href="https://devincept.tech/sponsor.html" style="font-size: 13px;">sponsor us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="hero" style="background: #2f1b1b;">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">Python Programming</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #fff;">PyZMQ</h1>
+        </div>
+        <div id="base" class="text-center" style="padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;background: rgba(255,255,255,0.1);">
+            <p class="justify-content-center" style="color: #fff;"><i class="fa fa-align-center"></i>&nbsp; Reads&nbsp;<span id="visits">0</span></p>
+        </div>
+    </section>
+    <section id="sidetab" style="background: #dedede;padding: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 15px;">
+                    <div class="text-center" style="background: #fff;border-radius: 10px;padding: 10px;">
+                        <h2 style="color: #800080;">Author Details</h2>
+                        <h4>Akshay Adme<br></h4><a href="https://github.com/akshayadme/akshayadme" style="color: #030431;padding: 5px;font-size: 25px;" target="_blank"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/akshay-adme-63aa43127/" style="color: #030431;padding: 5px;font-size: 25px;"
+                            target="_blank"><i class="fa fa-linkedin"></i></a></div>
+                </div>
+                <div class="col-md-9" data-aos="fade-down" id="main" style="padding: 15px 15px;">
+                    <h2 style="color: #800080;"><strong>Client-Server with PyZMQ</strong><br></h2>
+                    <h3 style="color: #800080;"><strong>What are WebSocket?</strong></h3>
+                    <p><br>A WebSocket is a standard protocol for two-way data transfer between a client and server. The WebSockets protocol does not run over HTTP, instead it is a separate implementation on top of TCP. WebSocket is used for Real-Time Application
+                        and it uses single TCP Connection it means it establishes connection only once and header request is sent only once.<br><br></p><img class="img-fluid" src="assets/img/pyzmq1.png">
+                    <h3 style="color: #800080;"><strong>What is client-Server Architecture?</strong><br></h3>
+                    <p><br>The client-server architecture is also termed as a network-computing structure because every request and their associated services are distributed over a network.<br><br>In the client-server architecture, when the client computer
+                        sends a request for data to the server through the internet, the server accepts the requested, process it and deliver the data packets requested back to the client.<br><br>A server computer can manage several clients simultaneously,
+                        whereas one client can be connected to several servers at a time, each providing a different set of services.<br><br></p><img class="img-fluid" src="assets/img/pyzmq2.jpg">
+                    <h3 style="color: #800080;"><strong>What is PyZMQ?</strong></h3>
+                    <p><br>First we will learn about what is ZeroMq or ZMQ? ZeroMQ is a library used to implement messaging and communication systems between applications and processes fast and asynchronously.<br><br>ZeroMQ as a library works through sockets
+                        by following certain network communication patterns. It is designed to work asynchronously, and that’s where the MQ suffix to its name comes from thread queuing messages before sending them.<br><br>ZeroMQ supports common messaging
+                        patterns over a variety of transports, making inter-process messaging as simple as inter-thread messaging. ZeroMQ comes with no messaging brokers on the side, meaning that there is no intermediary server/module which is needed
+                        to translate the messages sent between sender and recipient to a uniform messaging protocol. This makes ZMQ lightweight and easy to get started with.<br><br></p>
+                    <h5><strong><em>PyZMQ</em></strong></h5>
+                    <p><br>PyZMQ is the Python-based binding for the popular open-source ZeroMQ (ØMQ/ZMQ) messaging library. If we want to use ZMQ with Python programs, there is a library where with all the bindings of pyZMQ.<br><br>First we have to install
+                        PyZMQ<br></p><code>pip install pyzmq<br></code>
+                    <p><br>Once you have installed it you have do make a simple program. There will be a server side coding for connection to server you can get&nbsp;<a href="https://github.com/akshayadme/Open-contributions/blob/master/server.py" target="_blank">here</a>
+                        <a
+                            href="https://github.com/akshayadme/Open-contributions/blob/master/server.py">&nbsp;</a>and then you can send request to server as a client you can get&nbsp;<a href="https://github.com/akshayadme/Open-contributions/blob/master/client.py" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column justify-content-center align-items-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Crete Round', serif;">DevIncept.codes</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script>
+        function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/pyzmq/visits?callback=cb"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+</body>
+
+</html>
